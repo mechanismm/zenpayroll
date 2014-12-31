@@ -47,8 +47,10 @@ $(document).ready(function() {
 				$('#choose-date').val("");
 			} 
 			else { 
-				$('.save-date-button').addClass('close-reveal-modal');
-				$('#choose-date').val(date);
+				$('.save-date-button').click(function() { 
+					$('.save-date-button').addClass('close-reveal-modal');
+					$('#choose-date').val(date);
+				});
 			}
 		}
   });
