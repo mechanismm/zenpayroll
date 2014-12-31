@@ -1,0 +1,9 @@
+.choose-date-control { 
+	@include clearfix(); 
+	clear:both;
+}
+
+.choose-date-form { 
+	margin-top:$column-gutter * 3;
+	margin-bottom:$column-gutter * 3;
+}

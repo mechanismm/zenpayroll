@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avoid Holidays</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-12 columns">
+        <h1>Avoid Holidays</h1>
+        <p class="lead">Select a non-weekend, non-holiday date.</p>
+
+        <label for="choose-date">
+          <input type="text" id="choose-date" gldp-id="choose-date" disabled>
+          <button href="#" data-reveal-id="choose-date-modal">Choose Date</button>
+        </label>
+      </div>
+    </div>
+
+    <div id="choose-date-modal" class="reveal-modal open" data-reveal style="display: block; opacity: 1; visibility: visible; top: 100px;">
+      <h2>Awesome. I have it.</h2>
+      <p class="lead">Your couch.  It is mine.</p>
+
+      <div gldp-el="choose-date" class="choose-date-control" style="width:400px; height:300px; position:absolute; top:70px; left:100px;"></div>
+
+      <ul class="inline-list button-list">
+        <li><a href="#" class="primary button radius disabled close-reveal-modal">Save</a></li>
+        <li><a href="#" class="secondary button radius close-reveal-modal">Cancel</a></li>
+      </ul>
+
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <!--JQuery UI-->
+    <script src="js/jquery-ui.min.js"></script>
+    <!--End JQuery UI -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avoid Holidays</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <section class="row avoid-holidays">
+      <div class="small-12 columns">
+        <h1 class="section-heading">Avoid Holidays</h1>
+        <h5 class="subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed erat lobortis, ultrices mauris vel, malesuada massa. Cras semper neque quis mattis tristique. Nunc dictum tempus felis non lacinia. Donec ut commodo leo. Sed luctus est sed lectus rutrum vulputate. Phasellus luctus sagittis congue</h5>
+
+        <form class="choose-date-form">
+          <label for="choose-date">
+            <div class="row">
+              <div class="large-7 medium-8 small-12 columns medium-centered large-centered">
+                <div class="row collapse">
+                  <div class="small-6 medium-7 columns">
+                    <input type="text" id="choose-date" class="choose-date-input" disabled>
+                  </div>
+                  <div class="small-6 medium-5 columns">
+                    <button href="#" class="postfix choose-date-button" data-reveal-id="choose-date-modal">Choose Date</button>
+                  </div>              
+                </div>
+              </div>
+            </div>
+          </label>
+        </form>
+
+        <hr> 
+
+        <div class="row">
+          <div class="small-12 medium-4 columns">
+            <img src="images/icon-star.jpg" alt="Image Title" class="thumbnail">
+            <h6 class="instruction-heading">Title goes here</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed erat lobortis, ultrices mauris vel, malesuada massa.</p>
+          </div>
+          <div class="small-12 medium-4 columns">
+            <img src="images/icon-loop.jpg" alt="Image Title" class="thumbnail">
+            <h6 class="instruction-heading">Title goes here</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed erat lobortis, ultrices mauris vel, malesuada massa.</p>            
+          </div>
+          <div class="small-12 medium-4 columns">
+            <img src="images/icon-tag.jpg" alt="Image Title" class="thumbnail">
+            <h6 class="instruction-heading">Title goes here</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed erat lobortis, ultrices mauris vel, malesuada massa.</p>            
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!--keep this modal open
+    style="display: block; opacity: 1; visibility: visible; top: 100px;"
+    -->
+    <div id="choose-date-modal" class="reveal-modal" data-reveal>
+      <h1 class="section-heading">Select Date</h1>
+      <h5 class="subhead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed erat lobortis, ultrices mauris vel, malesuada massa. Cras semper neque quis mattis tristique. Nunc dictum tempus felis non lacinia. Donec ut commodo leo. Sed luctus est sed lectus rutrum vulputate. Phasellus luctus sagittis congue</h5>
+      <div id="datepicker-control"></div>
+      <div id="dialog"></div>
+      <div class="row">
+        <div class="small-8 medium-6 large-4 columns small-centered large-centered medium-centered">
+          <ul class="inline-list button-list">
+            <li><a href="#" class="save-date-button primary button radius disabled">Save</a></li>
+            <li><a href="#" class="secondary button radius close-reveal-modal">Cancel</a></li>
+          </ul>
+        </div>
+      </div>
+      <a class="close-reveal-modal corner-button"><span>&#215;</span></a>
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <!--JQuery UI-->
+    <script src="js/jquery-ui.min.js"></script>
+    <!--End JQuery UI -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

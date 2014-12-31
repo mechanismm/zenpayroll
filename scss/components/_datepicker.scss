@@ -1,0 +1,115 @@
+.ui-datepicker-inline { 
+	margin: 0 auto;
+}
+
+.ui-datepicker-unselectable.ui-state-disabled.undefined { 
+	opacity: 1 !important;
+	filter: Alpha(Opacity=100) !important;
+	span { 
+		border: inset 3px solid $alert-color !important;
+		background: rgba($alert-color,.7) !important;
+		font-weight: bold;
+		color: #000;
+	}
+}
+
+.ui-datepicker-current-day .ui-state-active { 
+	border: inset 3px solid $primary-color !important;
+	background: rgba($primary-color,.7) !important;
+	font-weight: bold;
+	color: #fff !important;
+}
+
+.ui-state-highlight { 
+	border: inset 3px solid $primary-color !important;
+}
+
+.ui-widget-content {
+	border: none;
+	background: none;
+	color: $secondary-color;
+}
+
+.ui-widget-header {
+	border: none;
+	background: none;
+	color: shade($secondary-color,50%);
+	font-weight: 300;
+	font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+.ui-datepicker-calendar thead { 
+	display:none; 
+}
+
+.ui-datepicker-calendar .ui-state-default { 
+	padding:$column-gutter/3;	
+	border: inset 1px solid $secondary-color !important;
+	background: tint($secondary-color,50%);
+	font-weight: bold;
+	color: shade($secondary-color,50%) !important;
+
+}
+
+.ui-datepicker table {
+	font-size: .9em;
+	border:none; 
+}
+
+.ui-widget-header { 
+	.ui-icon {
+		position: relative;
+		background-color:$primary-color;
+		border-radius:50%;		
+		background-image: none;
+		padding:10px;
+	}
+}
+
+.ui-datepicker-title { 
+	margin-bottom:12px !important; 
+}
+
+.ui-datepicker-prev.ui-state-hover,
+.ui-datepicker-next.ui-state-hover { 
+	border: none;
+	background: none;
+}
+
+.ui-datepicker-prev.ui-state-hover { 	
+	top:2px;
+	left:2px;
+}
+
+.ui-datepicker-next.ui-state-hover { 	
+	top:2px;
+	right:2px;
+}
+
+.ui-datepicker-prev { 
+	position: relative;
+}
+.ui-datepicker-prev:before { 
+	font-family: "FontAwesome";
+	content: "\f104";
+	position: relative;
+	color: #fff;
+	top: 4px;
+	left: 13px;
+	z-index: 10000;
+}
+
+.ui-datepicker-next { 
+	position: relative;
+}
+.ui-datepicker-next:before { 
+	font-family: "FontAwesome";
+	content: "\f105";
+	position: relative;
+	color: #fff;
+	top: 4px;
+	right: -15px;
+	z-index: 10000;
+}
+
+

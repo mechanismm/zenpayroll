@@ -1,0 +1,25 @@
+.button, button { 
+	text-transform: uppercase;
+	font-size:rem-calc(13) !important;
+	font-weight:800;
+	background: linear-gradient($primary-color, shade($primary-color,10%)); 
+	&.secondary { 
+		background: linear-gradient($secondary-color, shade($secondary-color,10%)); 
+	}
+	&.disabled { font-size:rem-calc(13) !important; }
+}
+
+.inline-list { 
+	margin-top:$column-gutter;
+}
+
+.inline-list .close-reveal-modal { 
+	position: static;
+	font-size: rem-calc(13);
+	color: #fff !important; 
+	font-weight: bold;
+}
+
+.choose-date-button { 
+	border-radius: 0 $global-radius $global-radius 0; 
+}
