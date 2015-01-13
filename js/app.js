@@ -53,41 +53,7 @@ $(document).ready(function() {
 				});
 			}
 		}
-  });
-
-	// var dlg = $('#dialog').dialog({
- //    autoOpen: false,
- //    draggable: false,
- //    resizable: false,
- //    width: 350,
-	// });    
-
-	// function hover_date() { 
-	//   $(".ui-datepicker-unselectable.ui-state-disabled.undefined span").mouseover(function() {
-	//   	var parsedHtmlString = $(".ui-datepicker-unselectable.ui-state-disabled.undefined span").text(); 
-	// 	  console.log(parsedHtmlString);
-	// 	  hover_date = parsedHtmlString; 
-	// 	  return hover_date; 
-	//   });
-	// }
-
- //  $(".ui-datepicker-unselectable.ui-state-disabled.undefined").mouseover(function() {
- //    dlg.dialog("open");  
- //  }).mousemove(function(event) {
- //    dlg.dialog("option", "position", {
- //      my: "left top",
- //      at: "right bottom",
- //      of: event,
- //      offset: "20 20"
- //    });
- //  }).mouseout(function() {
- //      dlg.dialog("close");
- //  });
-
-	// $('#dialog').html("<span style='color: #7f7fff; font-weight: lighter;'>" + 'Holiday' + '</span>' + hover_date());
-
-
-	    
+  });	    
 });
 
 
