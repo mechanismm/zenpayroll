@@ -20,7 +20,7 @@ $(document).ready(function() {
 	/* utility function */
 	function nationalDays(date) {
 		var m = date.getMonth(), d = date.getDate(), y = date.getFullYear();
-		// console.log('Checking (raw): ' + m + '-' + d + '-' + y);
+		console.log('Checking (raw): ' + m + '-' + d + '-' + y);
 		for (i = 0; i < disabledDays.length; i++) {
 			if($.inArray((m+1) + '-' + d + '-' + y,disabledDays) != -1) {
 				console.log('bad:  ' + (m+1) + '-' + d + '-' + y + ' / ' + disabledDays[i]);
