@@ -2,32 +2,62 @@
 	margin: 0 auto;
 }
 
-.ui-datepicker-unselectable.ui-state-disabled.undefined { 
+//Holidays will be marked with a red color
+.holiday { 
 	opacity: 1 !important;
 	filter: Alpha(Opacity=100) !important;
 	span { 
-		border: inset 3px solid $alert-color !important;
+		border: 2px solid $alert-color !important;
 		background: rgba($alert-color,.7) !important;
 		font-weight: bold;
 		color: #000;
 	}
 }
 
+//Selected Day
 .ui-datepicker-current-day .ui-state-active { 
-	border: inset 3px solid $primary-color !important;
+	border: 2px solid $primary-color !important;
 	background: rgba($primary-color,.7) !important;
 	font-weight: bold;
 	color: #fff !important;
 }
 
-.ui-state-highlight { 
-	border: inset 3px solid $primary-color !important;
+//Unselected Day Cell 
+.ui-datepicker-calendar .ui-state-default { 
+	padding:$column-gutter/3;	
+	border: 2px solid $secondary-color !important;
+	background: tint($secondary-color,50%);
+	font-weight: bold;
+	color: shade($secondary-color,50%) !important;
+}
+
+
+//Calendar Table
+.ui-datepicker table {
+	font-size: .9em;
+	border:2px solid tint(#000,75%); 
 }
 
 .ui-widget-content {
 	border: none;
 	background: none;
 	color: $secondary-color;
+}
+
+.ui-datepicker td { 
+	background-color: tint(#000,70%);
+}
+
+
+//Header and Title Area
+.ui-widget-header { 
+	.ui-icon {
+		position: relative;
+		background-color:$primary-color;
+		border-radius:50%;		
+		background-image: none;
+		padding:10px;
+	}
 }
 
 .ui-widget-header {
@@ -42,34 +72,13 @@
 	display:none; 
 }
 
-.ui-datepicker-calendar .ui-state-default { 
-	padding:$column-gutter/3;	
-	border: inset 1px solid $secondary-color !important;
-	background: tint($secondary-color,50%);
-	font-weight: bold;
-	color: shade($secondary-color,50%) !important;
-
-}
-
-.ui-datepicker table {
-	font-size: .9em;
-	border:none; 
-}
-
-.ui-widget-header { 
-	.ui-icon {
-		position: relative;
-		background-color:$primary-color;
-		border-radius:50%;		
-		background-image: none;
-		padding:10px;
-	}
-}
-
 .ui-datepicker-title { 
 	margin-bottom:12px !important; 
 }
 
+
+
+//Next and Previous Buttons
 .ui-datepicker-prev.ui-state-hover,
 .ui-datepicker-next.ui-state-hover { 
 	border: none;
@@ -89,6 +98,7 @@
 .ui-datepicker-prev { 
 	position: relative;
 }
+
 .ui-datepicker-prev:before { 
 	font-family: "FontAwesome";
 	content: "\f104";

@@ -6,9 +6,9 @@
 
 //JQuery UI CSS
 @import
-	"components/jquery-ui",
-	"components/jquery-ui-structure",
-	"components/jquery-ui-theme";
+	"jquery-ui/jquery-ui",
+	"jquery-ui/jquery-ui-structure",
+	"jquery-ui/jquery-ui-theme";
 
 //ZenPayroll Components
 @import
@@ -16,12 +16,9 @@
 	"components/datepicker",
 	"components/forms",
 	"components/modals",
-	"components/restricted_date_tooltip",
 	"components/sections",
+	"components/tooltips",
 	"components/typography";
-
-
-
 
 
 // Or selectively include components
