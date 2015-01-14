@@ -1,0 +1,20 @@
+.instruction-heading { 
+	font-weight:800;
+	text-transform:uppercase;
+	border-bottom: 1px dashed $secondary-color; 
+	padding-bottom:$column-gutter/2;
+	width:80%; 
+	@media #{$small-only} { 
+		width: 100%;
+	}
+}
+
+@media #{$small-only} { 
+	.benefit-description-container { 
+		text-align: center;
+	}
+	.thumbnail { text-align:center; }	
+	.benefits { 
+		margin-bottom: $column-gutter !important;
+	}
+}

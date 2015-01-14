@@ -6,13 +6,13 @@ meta.foundation-version {
 /* line 351, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-small {
   font-family: "/only screen/";
-  width: 0;
+  width: 0em;
 }
 
 /* line 356, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-small-only {
   font-family: "/only screen and (max-width: 40em)/";
-  width: 0;
+  width: 0em;
 }
 
 /* line 361, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -14815,8 +14815,13 @@ body .ui-tooltip {
 .inline-list {
   margin-top: 1.875rem;
 }
+/* line 14, ../scss/components/_buttons.scss */
+.inline-list li {
+  margin-left: 0.9375rem;
+  margin-right: 0.9375rem;
+}
 
-/* line 16, ../scss/components/_buttons.scss */
+/* line 20, ../scss/components/_buttons.scss */
 .inline-list .close-reveal-modal {
   position: static;
   font-size: 0.8125rem;
@@ -14824,22 +14829,134 @@ body .ui-tooltip {
   font-weight: bold;
 }
 
-/* line 23, ../scss/components/_buttons.scss */
+/* line 27, ../scss/components/_buttons.scss */
+.button-list {
+  width: 100%;
+  float: none;
+  margin: 0 auto;
+  /* one item */
+  /* two items */
+  /* three items */
+  /* four items */
+  /* five items */
+  /* six items */
+  /* seven items */
+  /* eight items */
+}
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* line 27, ../scss/components/_buttons.scss */
+  .button-list {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 27, ../scss/components/_buttons.scss */
+  .button-list {
+    width: 35%;
+  }
+}
+/* line 38, ../scss/components/_buttons.scss */
+.button-list > li:first-child:nth-last-child(1) {
+  width: calc(100% - 1.875rem);
+}
+/* line 43, ../scss/components/_buttons.scss */
+.button-list > li:first-child:nth-last-child(2),
+.button-list > li:first-child:nth-last-child(2) ~ li {
+  width: calc(50% - 1.875rem);
+}
+/* line 49, ../scss/components/_buttons.scss */
+.button-list > li:first-child:nth-last-child(3),
+.button-list > li:first-child:nth-last-child(3) ~ li {
+  width: calc(33.3333% - $column-gutter);
+}
+/* line 55, ../scss/components/_buttons.scss */
+.button-list > li:first-child:nth-last-child(4),
+.button-list > li:first-child:nth-last-child(4) ~ li {
+  width: calc(25% - $column-gutter);
+}
+/* line 61, ../scss/components/_buttons.scss */
+.button-list > li:first-child:nth-last-child(5),
+.button-list > li:first-child:nth-last-child(5) ~ li {
+  width: calc(20% - $column-gutter);
+}
+/* line 67, ../scss/components/_buttons.scss */
+.button-list > li:first-child:nth-last-child(6),
+.button-list > li:first-child:nth-last-child(6) ~ li {
+  width: calc(16.66666% - $column-gutter);
+}
+/* line 73, ../scss/components/_buttons.scss */
+.button-list > li:first-child:nth-last-child(7),
+.button-list > li:first-child:nth-last-child(7) ~ li {
+  width: calc(14.28% - $column-gutter);
+}
+/* line 79, ../scss/components/_buttons.scss */
+.button-list > li:first-child:nth-last-child(8),
+.button-list > li:first-child:nth-last-child(8) ~ li {
+  width: calc(12.5% - $column-gutter);
+}
+
+/* line 85, ../scss/components/_buttons.scss */
 .choose-date-button {
   border-radius: 0 4px 4px 0;
 }
 
+/* line 1, ../scss/components/_benefits.scss */
+.instruction-heading {
+  font-weight: 800;
+  text-transform: uppercase;
+  border-bottom: 1px dashed #a5a59f;
+  padding-bottom: 0.9375rem;
+  width: 80%;
+}
+@media only screen and (max-width: 40em) {
+  /* line 1, ../scss/components/_benefits.scss */
+  .instruction-heading {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 13, ../scss/components/_benefits.scss */
+  .benefit-description-container {
+    text-align: center;
+  }
+
+  /* line 16, ../scss/components/_benefits.scss */
+  .thumbnail {
+    text-align: center;
+  }
+
+  /* line 17, ../scss/components/_benefits.scss */
+  .benefits {
+    margin-bottom: 1.875rem !important;
+  }
+}
 /* line 1, ../scss/components/_datepicker.scss */
+.datepicker-component {
+  margin-bottom: 1.875rem;
+  clear: both;
+}
+/* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.datepicker-component:before, .datepicker-component:after {
+  content: " ";
+  display: table;
+}
+/* line 173, ../bower_components/foundation/scss/foundation/components/_global.scss */
+.datepicker-component:after {
+  clear: both;
+}
+
+/* line 9, ../scss/components/_datepicker.scss */
 .ui-datepicker-inline {
   margin: 0 auto;
 }
 
-/* line 6, ../scss/components/_datepicker.scss */
+/* line 14, ../scss/components/_datepicker.scss */
 .holiday {
   opacity: 1 !important;
   filter: Alpha(Opacity=100) !important;
 }
-/* line 9, ../scss/components/_datepicker.scss */
+/* line 17, ../scss/components/_datepicker.scss */
 .holiday span {
   border: 2px solid #c85753 !important;
   background: rgba(200, 87, 83, 0.7) !important;
@@ -14847,7 +14964,7 @@ body .ui-tooltip {
   color: #000;
 }
 
-/* line 18, ../scss/components/_datepicker.scss */
+/* line 26, ../scss/components/_datepicker.scss */
 .ui-datepicker-current-day .ui-state-active {
   border: 2px solid #49ad41 !important;
   background: rgba(73, 173, 65, 0.7) !important;
@@ -14855,7 +14972,7 @@ body .ui-tooltip {
   color: #fff !important;
 }
 
-/* line 26, ../scss/components/_datepicker.scss */
+/* line 34, ../scss/components/_datepicker.scss */
 .ui-datepicker-calendar .ui-state-default {
   padding: 0.625rem;
   border: 2px solid #a5a59f !important;
@@ -14864,25 +14981,25 @@ body .ui-tooltip {
   color: #52524f !important;
 }
 
-/* line 36, ../scss/components/_datepicker.scss */
+/* line 44, ../scss/components/_datepicker.scss */
 .ui-datepicker table {
   font-size: .9em;
   border: 2px solid #bfbfbf;
 }
 
-/* line 41, ../scss/components/_datepicker.scss */
+/* line 49, ../scss/components/_datepicker.scss */
 .ui-widget-content {
   border: none;
   background: none;
   color: #a5a59f;
 }
 
-/* line 47, ../scss/components/_datepicker.scss */
+/* line 55, ../scss/components/_datepicker.scss */
 .ui-datepicker td {
   background-color: #b2b2b2;
 }
 
-/* line 54, ../scss/components/_datepicker.scss */
+/* line 62, ../scss/components/_datepicker.scss */
 .ui-widget-header .ui-icon {
   position: relative;
   background-color: #49ad41;
@@ -14891,7 +15008,7 @@ body .ui-tooltip {
   padding: 10px;
 }
 
-/* line 63, ../scss/components/_datepicker.scss */
+/* line 71, ../scss/components/_datepicker.scss */
 .ui-widget-header {
   border: none;
   background: none;
@@ -14900,41 +15017,41 @@ body .ui-tooltip {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
-/* line 71, ../scss/components/_datepicker.scss */
+/* line 79, ../scss/components/_datepicker.scss */
 .ui-datepicker-calendar thead {
   display: none;
 }
 
-/* line 75, ../scss/components/_datepicker.scss */
+/* line 83, ../scss/components/_datepicker.scss */
 .ui-datepicker-title {
   margin-bottom: 12px !important;
 }
 
-/* line 82, ../scss/components/_datepicker.scss */
+/* line 90, ../scss/components/_datepicker.scss */
 .ui-datepicker-prev.ui-state-hover,
 .ui-datepicker-next.ui-state-hover {
   border: none;
   background: none;
 }
 
-/* line 88, ../scss/components/_datepicker.scss */
+/* line 96, ../scss/components/_datepicker.scss */
 .ui-datepicker-prev.ui-state-hover {
   top: 2px;
   left: 2px;
 }
 
-/* line 93, ../scss/components/_datepicker.scss */
+/* line 101, ../scss/components/_datepicker.scss */
 .ui-datepicker-next.ui-state-hover {
   top: 2px;
   right: 2px;
 }
 
-/* line 98, ../scss/components/_datepicker.scss */
+/* line 106, ../scss/components/_datepicker.scss */
 .ui-datepicker-prev {
   position: relative;
 }
 
-/* line 102, ../scss/components/_datepicker.scss */
+/* line 110, ../scss/components/_datepicker.scss */
 .ui-datepicker-prev:before {
   font-family: "FontAwesome";
   content: "\f104";
@@ -14945,12 +15062,12 @@ body .ui-tooltip {
   z-index: 10000;
 }
 
-/* line 112, ../scss/components/_datepicker.scss */
+/* line 120, ../scss/components/_datepicker.scss */
 .ui-datepicker-next {
   position: relative;
 }
 
-/* line 115, ../scss/components/_datepicker.scss */
+/* line 123, ../scss/components/_datepicker.scss */
 .ui-datepicker-next:before {
   font-family: "FontAwesome";
   content: "\f105";
@@ -15066,19 +15183,10 @@ body .ui-tooltip {
   font-weight: 300 !important;
 }
 
-/* line 6, ../scss/components/_typography.scss */
+/* line 5, ../scss/components/_typography.scss */
 .subhead {
   text-align: center;
   margin: 0 auto 1.875rem;
   font-size: 1rem;
-  width: 80%;
-}
-
-/* line 13, ../scss/components/_typography.scss */
-.instruction-heading {
-  font-weight: 800;
-  text-transform: uppercase;
-  border-bottom: 1px dashed #a5a59f;
-  padding-bottom: 0.9375rem;
   width: 80%;
 }

@@ -1,3 +1,11 @@
+.datepicker-component { 
+	margin-bottom:$column-gutter;
+	clear:both;
+	@include clearfix();
+}
+
+
+//Center the datepicker on the page
 .ui-datepicker-inline { 
 	margin: 0 auto;
 }

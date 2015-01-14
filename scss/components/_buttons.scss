@@ -11,6 +11,10 @@
 
 .inline-list { 
 	margin-top:$column-gutter;
+	li { 
+		margin-left:$column-gutter/2; 
+		margin-right:$column-gutter/2;
+	}
 }
 
 .inline-list .close-reveal-modal { 
@@ -18,6 +22,64 @@
 	font-size: rem-calc(13);
 	color: #fff !important; 
 	font-weight: bold;
+}
+
+.button-list {
+	width:100%; 
+	@media #{$medium-only} { 
+		width:60%;
+	}
+	@media #{$large-up} { 
+		width:35%;
+	}
+	float:none;
+	margin:0 auto;
+	/* one item */
+	> li:first-child:nth-last-child(1) {
+	    width: calc(100% - #{$column-gutter});
+	}
+
+	/* two items */
+	> li:first-child:nth-last-child(2),
+	> li:first-child:nth-last-child(2) ~ li {
+	    width: calc(50% - #{$column-gutter});
+	}
+
+	/* three items */
+	> li:first-child:nth-last-child(3),
+	> li:first-child:nth-last-child(3) ~ li {
+	    width: calc(33.3333% - $column-gutter);
+	}
+
+	/* four items */
+	> li:first-child:nth-last-child(4),
+	> li:first-child:nth-last-child(4) ~ li {
+	    width: calc(25% - $column-gutter);
+	}
+
+	/* five items */
+	> li:first-child:nth-last-child(5),
+	> li:first-child:nth-last-child(5) ~ li {
+	    width: calc(20% - $column-gutter);
+	}
+
+	/* six items */
+	> li:first-child:nth-last-child(6),
+	> li:first-child:nth-last-child(6) ~ li {
+	    width: calc(16.66666% - $column-gutter);
+	}
+
+	/* seven items */
+	> li:first-child:nth-last-child(7),
+	> li:first-child:nth-last-child(7) ~ li {
+	    width: calc(14.28% - $column-gutter);
+	}
+
+	/* eight items */
+	> li:first-child:nth-last-child(8),
+	> li:first-child:nth-last-child(8) ~ li {
+	    width: calc(12.5% - $column-gutter);
+	}
 }
 
 .choose-date-button { 
