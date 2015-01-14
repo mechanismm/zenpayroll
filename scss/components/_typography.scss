@@ -1,10 +1,16 @@
 .section-heading { 
 	text-align:center; 
 	font-weight:300 !important;
+	@media #{$small-only} { 
+		font-size:rem-calc(36);
+	}
 }
 .subhead { 
 	text-align:center;
 	margin:0 auto $column-gutter;
 	font-size:rem-calc(16);
-	width:80%;
+	width: 100%; 
+	@media #{$medium-up} { 
+		width:80%;
+	}
 }

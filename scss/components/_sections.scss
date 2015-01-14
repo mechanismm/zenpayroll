@@ -1,3 +1,6 @@
 .avoid-holidays h1 { 
-	margin-top:$column-gutter * 3;
+	margin-top:$column-gutter;
+	@media #{$medium-up} { 
+		margin-top:$column-gutter * 3;
+	}
 }

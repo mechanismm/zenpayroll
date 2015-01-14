@@ -183,7 +183,7 @@ select {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem;
+  max-width: 73.125rem;
 }
 /* line 172, ../bower_components/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
@@ -5708,7 +5708,7 @@ ul.pagination li {
   /* line 168, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal, dialog {
     width: 80%;
-    max-width: 62.5rem;
+    max-width: 48.75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5736,7 +5736,7 @@ ul.pagination li {
   /* line 183, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.tiny, dialog.tiny {
     width: 30%;
-    max-width: 62.5rem;
+    max-width: 48.75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5746,7 +5746,7 @@ ul.pagination li {
   /* line 184, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.small, dialog.small {
     width: 40%;
-    max-width: 62.5rem;
+    max-width: 48.75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5756,7 +5756,7 @@ ul.pagination li {
   /* line 185, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.medium, dialog.medium {
     width: 60%;
-    max-width: 62.5rem;
+    max-width: 48.75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5766,7 +5766,7 @@ ul.pagination li {
   /* line 186, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.large, dialog.large {
     width: 70%;
-    max-width: 62.5rem;
+    max-width: 48.75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5776,7 +5776,7 @@ ul.pagination li {
   /* line 187, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.xlarge, dialog.xlarge {
     width: 95%;
-    max-width: 62.5rem;
+    max-width: 48.75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -5796,7 +5796,7 @@ ul.pagination li {
   /* line 188, ../bower_components/foundation/scss/foundation/components/_reveal.scss */
   .reveal-modal.full, dialog.full {
     width: 100vw;
-    max-width: 62.5rem;
+    max-width: 48.75rem;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -7079,7 +7079,7 @@ meta.foundation-mq-topbar {
 
   /* line 477, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+    max-width: 73.125rem;
     margin: 0 auto;
     margin-bottom: 0;
   }
@@ -14852,7 +14852,7 @@ body .ui-tooltip {
 @media only screen and (min-width: 64.063em) {
   /* line 27, ../scss/components/_buttons.scss */
   .button-list {
-    width: 35%;
+    width: 45%;
   }
 }
 /* line 38, ../scss/components/_buttons.scss */
@@ -15105,18 +15105,36 @@ body .ui-tooltip {
   width: 30px;
   height: 30px;
 }
-/* line 6, ../scss/components/_modals.scss */
-.reveal-modal .close-reveal-modal.corner-button span, dialog .close-reveal-modal.corner-button span {
-  position: relative;
-  top: -11px;
-  right: -8px;
-  font-size: 29px;
-  color: #fff;
+@media only screen and (max-width: 40em) {
+  /* line 1, ../scss/components/_modals.scss */
+  .reveal-modal .close-reveal-modal.corner-button, dialog .close-reveal-modal.corner-button {
+    display: none;
+  }
+  /* line 8, ../scss/components/_modals.scss */
+  .reveal-modal .close-reveal-modal.corner-button span, dialog .close-reveal-modal.corner-button span {
+    display: none;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 11, ../scss/components/_modals.scss */
+  .reveal-modal .close-reveal-modal.corner-button span, dialog .close-reveal-modal.corner-button span {
+    position: relative;
+    top: -11px;
+    right: -8px;
+    font-size: 29px;
+    color: #fff;
+  }
 }
 
 /* line 1, ../scss/components/_sections.scss */
 .avoid-holidays h1 {
-  margin-top: 5.625rem;
+  margin-top: 1.875rem;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 1, ../scss/components/_sections.scss */
+  .avoid-holidays h1 {
+    margin-top: 5.625rem;
+  }
 }
 
 /* line 1, ../scss/components/_tooltips.scss */
@@ -15182,11 +15200,23 @@ body .ui-tooltip {
   text-align: center;
   font-weight: 300 !important;
 }
+@media only screen and (max-width: 40em) {
+  /* line 1, ../scss/components/_typography.scss */
+  .section-heading {
+    font-size: 2.25rem;
+  }
+}
 
-/* line 5, ../scss/components/_typography.scss */
+/* line 8, ../scss/components/_typography.scss */
 .subhead {
   text-align: center;
   margin: 0 auto 1.875rem;
   font-size: 1rem;
-  width: 80%;
+  width: 100%;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 8, ../scss/components/_typography.scss */
+  .subhead {
+    width: 80%;
+  }
 }
